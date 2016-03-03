@@ -18,6 +18,10 @@
                 <td>{{ article.content }}</td>
             </tr>
             <tr>
+                <th>Is Published</th>
+                <td>{{ article.isPublished }}</td>
+            </tr>
+            <tr>
                 <th>Createdat</th>
                 <td>{% if article.createdAt %}{{ article.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
             </tr>

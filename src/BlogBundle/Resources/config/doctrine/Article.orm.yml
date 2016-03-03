@@ -9,11 +9,16 @@ BlogBundle\Entity\Article:
             generator:
                 strategy: AUTO
     fields:
+        isPublished:
+            type: boolean
+            column: isPublished
         title:
             type: string
             length: 255
         content:
-            type: text
+            type: string
+            length: 255
         createdAt:
             type: datetime
+            column: created_at
     lifecycleCallbacks: {  }

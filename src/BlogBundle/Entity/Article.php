@@ -16,6 +16,12 @@ class Article
     private $id;
 
     /**
+     * @var boolean
+     */
+    private $isPublished;
+
+
+    /**
      * @var string
      */
     private $title;
@@ -39,6 +45,29 @@ class Article
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Set is_published
+     *
+     * @param boolean $is_published
+     * @return Article
+     */
+    public function setIsPublished($isPublished)
+    {
+        $this->isPublished = $isPublished;
+
+        return $this;
+    }
+
+    /**
+     * Get is_published
+     *
+     * @return boolean 
+     */
+    public function getIsPublished()
+    {
+        return $this->isPublished;
     }
 
     /**

@@ -16,6 +16,7 @@ class ArticleType extends AbstractType
     {
         $builder
             ->add('title')
+            ->add('isPublished')
             ->add('content')
             ->add('createdAt', 'datetime')
         ;
